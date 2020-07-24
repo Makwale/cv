@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<style type="text/css">
+		body{
+			height: 600px;
+		}
+
+		div#loginDiv{
+			width: 400px;
+			height: 200px;
+			position: absolute;
+			top: 35%;
+			left: 35%;
+			background-color: #EDEDED; 
+			text-align: center;
+			border-radius: 20px;
+		}
+
+		label{
+			font-size: 115%;
+		}
+
+		input{
+			margin-left: 5px;
+			margin-top: 10px;
+			margin-bottom: 2px;
+			width: 60%;
+			height: 11%;
+			font-size: 100%;
+			background-color: #fff;
+			border-radius: 5px;
+		}
+
+		input#password{
+			margin-left: 12px;
+		}
+
+		input#username{
+			margin-top: 25px;
+		}
+
+		button{
+			font-size: 90%;
+			width: 100px;
+			box-shadow: 0px 0px 9px 9px #171717;
+		}
+
+		input#username:hover{
+			border-bottom: 2px solid #00B2EE;
+			border-right: 2px solid #00B2EE;
+		}
+
+		input#username:focus{
+			background-color: #fff;
+			border: 2px solid #00B2EE;
+		}
+
+		input#password:hover{
+			border-bottom: 2px solid #00B2EE;
+			border-right: 2px solid #00B2EE;
+		}
+
+		input#password:focus{
+			background-color: #fff;
+			border: 2px solid #00B2EE;
+		}
+		
+		button:hover{
+			border-color: #595959;
+			color: #CFCFCF;
+			font-size: 95%;
+		}
+
+		h1{
+			margin-left: 230px;
+			font-family: cursive;
+			color: #fff;
+		}
+
+	</style>
+
+	<script type="text/javascript" src="login.js"></script>
+</head>
+<body>
+	<h1>Login to access my CV and Portfolio</h1>
+	<div id="loginDiv">
+		<label for="username" >Username <input type="text" value="" placeholder="Enter your username" id="username" class="inputs"></label> <br>
+		<label for="username" >Password <input type="password" value="" placeholder="Enter your password" id="password" class="inputs"></label><br>
+		<button type="submit" onclick="login()">Login</button>
+	</div>
+
+</body>
+</html>
